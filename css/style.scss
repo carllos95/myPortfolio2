@@ -7,6 +7,10 @@
 
     text-decoration: none;
     list-style-type: none;
+
+    body{
+        background-color: #1f2326;
+    }
 }
 .container-header{
     width: 100%;
@@ -125,6 +129,99 @@
                                 font-size: 1.250rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+.about-container{
+    max-width: 1200px;
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    padding: 40px 40px;
+    .about-title{
+        
+        text-align: center;
+        p{
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #ddd;
+        }
+        img{
+            width: 150px;
+            height: 10px;
+            border-radius: 5px;
+        }
+    }
+    
+    .about-text{
+        padding-top: 40px;
+        p{
+            font-size: 1.2rem;
+            color: #ddd;
+
+            span{
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #197462;
+            }
+        }
+    }
+    .about-details-container{  
+        width: 100%; 
+        padding-top: 40px; 
+        display: flex;
+        justify-content: space-between;
+        .about-details{
+            width: 30%;
+           
+            .about-details-title{
+                p{
+                    font-size: 1.8rem;
+                    color: #ddd;
+                }
+            }
+            .about-details-text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0px;
+                p{
+                    color: #ddd;
+                    span{
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        color: #197462;
+                    }
+                }
+            }
+        }
+        .interests-container{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            p{
+                padding-left: 20px;
+                font-size: 1.8rem;
+                color: #ddd;
+            }
+            .interests{
+                padding: 20px 0px;
+                display: flex;
+                flex-flow: wrap;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    width: 25%;
+                    
+                    margin-bottom: 20px;
+                    i{
+                       
+                        font-size: 3.5rem;
+                        color: #ddd;
                     }
                 }
             }
