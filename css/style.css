@@ -37,6 +37,16 @@
   font-weight: 600;
 }
 
+.container-header .content-header .nameMobile {
+  display: none;
+  color: #197462;
+}
+
+.container-header .content-header .nameMobile p {
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+
 .container-header .content-header .menu ul {
   display: inline-flex;
 }
@@ -49,6 +59,21 @@
   font-size: 1.250rem;
   color: #aaa;
   font-weight: 500;
+}
+
+@media screen and (max-width: 450px) {
+  .container-header .content-header .name {
+    display: none;
+  }
+  .container-header .content-header .nameMobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-header .content-header .menu ul {
+    display: none;
+  }
 }
 
 .hero-container {
@@ -154,105 +179,150 @@
   font-size: 1.250rem;
 }
 
-.about-container {
+@media screen and (max-width: 768px) {
+  .hero-container .hero .hero-content .container-photo {
+    height: 400px;
+  }
+  .hero-container .hero .hero-content .container-photo .photo-config img {
+    width: 250px;
+  }
+  .hero-container .hero .hero-content .container-photo .hero-icons {
+    width: 80%;
+  }
+}
+
+.about-background {
+  box-shadow: inset 0px 0px 40px -10px #000000;
+}
+
+.about-background .about-container {
   max-width: 1200px;
   width: 100%;
-  height: 600px;
   margin: auto;
   padding: 40px 40px;
 }
 
-.about-container .about-title {
+.about-background .about-container .about-title {
   text-align: center;
 }
 
-.about-container .about-title p {
+.about-background .about-container .about-title p {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
   color: #ddd;
 }
 
-.about-container .about-title img {
+.about-background .about-container .about-title img {
   width: 150px;
   height: 10px;
   border-radius: 5px;
 }
 
-.about-container .about-text {
+.about-background .about-container .about-text {
   padding-top: 40px;
 }
 
-.about-container .about-text p {
+.about-background .about-container .about-text p {
   font-size: 1.2rem;
   color: #ddd;
 }
 
-.about-container .about-text p span {
+.about-background .about-container .about-text p span {
   font-size: 1.2rem;
   font-weight: 600;
   color: #197462;
 }
 
-.about-container .about-details-container {
+.about-details-container {
+  max-width: 1200px;
   width: 100%;
-  padding-top: 40px;
+  padding: 40px 40px;
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
-.about-container .about-details-container .about-details {
+.about-details-container .about-details {
   width: 30%;
 }
 
-.about-container .about-details-container .about-details .about-details-title p {
+.about-details-container .about-details .about-details-title p {
   font-size: 1.8rem;
   color: #ddd;
 }
 
-.about-container .about-details-container .about-details .about-details-text {
+.about-details-container .about-details .about-details-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
 }
 
-.about-container .about-details-container .about-details .about-details-text p {
+.about-details-container .about-details .about-details-text p {
   color: #ddd;
 }
 
-.about-container .about-details-container .about-details .about-details-text p span {
+.about-details-container .about-details .about-details-text p span {
   font-size: 1.2rem;
   font-weight: 500;
   color: #197462;
 }
 
-.about-container .about-details-container .interests-container {
+.about-details-container .interests-container {
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
-.about-container .about-details-container .interests-container p {
+.about-details-container .interests-container p {
   padding-left: 20px;
   font-size: 1.8rem;
   color: #ddd;
 }
 
-.about-container .about-details-container .interests-container .interests {
+.about-details-container .interests-container .interests {
   padding: 20px 0px;
   display: flex;
   flex-flow: wrap;
 }
 
-.about-container .about-details-container .interests-container .interests div {
+.about-details-container .interests-container .interests div {
   display: flex;
   justify-content: center;
   width: 25%;
   margin-bottom: 20px;
 }
 
-.about-container .about-details-container .interests-container .interests div i {
+.about-details-container .interests-container .interests div i {
   font-size: 3.5rem;
   color: #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .about-details-container {
+    flex-direction: column;
+  }
+  .about-details-container .about-details {
+    width: 100%;
+  }
+  .about-details-container .about-details .about-details-text {
+    padding-top: 20px;
+  }
+  .about-details-container .about-details .about-details-text p {
+    font-size: 1rem;
+  }
+  .about-details-container .about-details .about-details-text p span {
+    font-size: 1rem;
+  }
+  .about-details-container .interests-container {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .about-details-container .interests-container p {
+    padding-left: 0px;
+  }
+  .about-details-container .interests-container .interests div i {
+    font-size: 2.5rem;
+  }
 }
