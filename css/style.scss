@@ -350,12 +350,27 @@
 .container-skills{
     width: 100%;
     height: 400px;
+    .skills-title{
+        padding: 10px 40px;
+        width: 100%;
+        text-align: center;
+        p{
+            color: #ddd;
+            font-size: 2.5rem;
+        }
+        img{
+            width: 60px;
+            height: 10px;
+            border-radius: 5px;
+        }
+    }
     .content-skills{
         max-width: 1200px;
         padding: 40px;
         display: flex;
         justify-content: space-between;
         margin: auto;
+        
         .left, .right{
             width: 40%;
             div{
@@ -371,5 +386,16 @@
                 }
             }
         }
+    }
+}
+@media screen and(max-width: 768px){
+    .container-skills{
+        .content-skills{
+            flex-direction: column;
+            .left, .right{
+                width: 100%;
+            }
+        }
+
     }
 }

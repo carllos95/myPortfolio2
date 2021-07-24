@@ -376,6 +376,23 @@
   height: 400px;
 }
 
+.container-skills .skills-title {
+  padding: 10px 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.container-skills .skills-title p {
+  color: #ddd;
+  font-size: 2.5rem;
+}
+
+.container-skills .skills-title img {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+}
+
 .container-skills .content-skills {
   max-width: 1200px;
   padding: 40px;
@@ -401,4 +418,13 @@
 .container-skills .content-skills .left div img, .container-skills .content-skills .right div img {
   width: 100%;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-skills .content-skills {
+    flex-direction: column;
+  }
+  .container-skills .content-skills .left, .container-skills .content-skills .right {
+    width: 100%;
+  }
 }
